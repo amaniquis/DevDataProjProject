@@ -21,7 +21,10 @@ shinyUI(pageWithSidebar(
           R-squared and adjusted R-squared when fitting a linear model with MPG
           as the response against your chosen predictors using the mtcars
           dataset. Typically, the higher the adjusted R-squared, the better the
-          predictors." ),
+          predictors."),
+        p("The R code for this application can be found ",
+          a("here", href="https://github.com/slydacious/DevDataProjProject"),
+          "."),
         h4('R-squared'),
         verbatimTextOutput("r2"),
         h4('Adjusted R-squared'),
